@@ -4,6 +4,13 @@ VITS封装.
 在配置文件`config.toml`中进行提供`模型文件.pth`和`配置文件config.json`即可。注意，其中的`cleaners`和`symbols`必须符合[CjangCjengh/vits](https://github.com/CjangCjengh/vits/tree/4952f607194bc77dbd72ad555af3720175f01fe9/text)项目的约定。
 
 ## 示例用法
+
+环境为：conda环境下的 Python 3.10.8
+
+项目内提供了依赖文件`requirements.txt`。
+
+`main.py`如下。未经过充分测试，可能根本跑不起来，只是恰好在我的环境下运行成功了。（
+
 ```py
 # main.py
 import sys
@@ -86,8 +93,6 @@ def load_config() -> bool:
 
 
 if __name__ == '__main__':
-    # print_mortal_state_config()
-
     colorama_init(autoreset=True)
 
     TTS_LOCAL = False

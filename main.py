@@ -78,8 +78,6 @@ def load_config() -> bool:
 
 
 if __name__ == '__main__':
-    # print_mortal_state_config()
-
     colorama_init(autoreset=True)
 
     TTS_LOCAL = False
