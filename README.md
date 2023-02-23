@@ -7,7 +7,7 @@ VITS封装.
 
 环境为：conda环境下的 Python 3.10.8
 
-项目内提供了依赖文件`requirements.txt`。
+项目内提供了依赖文件`requirements.txt`。还可能需要额外安装[FFmpeg](https://www.ffmpeg.org/download.html#build-windows)。
 
 `main.py`如下。未经过充分测试，可能根本跑不起来，只是恰好在我的环境下运行成功了。（
 

@@ -1,0 +1,2 @@
+import simpleaudio
+import pyaudio
