@@ -1,11 +1,3 @@
-# VITS-wrapper
-VITS封装.
-
-在配置文件`config.toml`中进行提供`模型文件.pth`和`配置文件config.json`即可。注意，其中的`cleaners`和`symbols`必须符合[CjangCjengh/vits](https://github.com/CjangCjengh/vits/tree/4952f607194bc77dbd72ad555af3720175f01fe9/text)项目的约定。
-
-## 示例用法
-```py
-# main.py
 import sys
 import toml
 from pathlib import Path
@@ -121,5 +113,3 @@ if __name__ == '__main__':
     tts_engine.say(u'我姓云，单名一个堇字。有道是闻名不如见面，日后还请多多赏光，常来听戏。', print_=True)
     while input_text := input(u'云堇 说：'):
         tts_engine.say(input_text)
-
-```

@@ -1,0 +1,10 @@
+[tts]
+local = false  # 是否启用操作系统自带的语音引擎。false则不启用，转而使用自定义的语音模型
+config_path = "./tts/vits_models/common/config.json"  # VITS引擎配置文件路径
+model_path = "./tts/vits_models/common/G_953000.pth"  # VITS引擎模型文件路径
+language = "ZH"  # cleaners需要添加的前后缀。如果你的cleaners不需要添加前后缀，请设置为空串""
+emotion = 0.5  # 控制感情变化程度，取值范围为[0.1, 1]
+phoneme_length = 0.668  # 控制音素发音长度，取值范围为[0.1, 1]
+speech_speed = 1.4  # 控制整体语速，取值范围为[0.1, 2]
+multi_speakers = true  # 是否为多人模型
+multi_speakers_sid = 141  # 多人模型的sid，仅当multi_speakers = true时生效；自带模型的取值范围为[0, 803]，参考自述文件（https://github.com/Pragmatism0220/MajsoulAI#%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84）
