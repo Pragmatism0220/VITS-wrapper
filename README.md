@@ -45,13 +45,13 @@ def load_config() -> bool:
             if not isinstance(TTS_CONFIG_PATH, str):
                 print(Style.BRIGHT + Back.RED + u'"tts.config_path"参数错误！配置文件路径必须为非空字符串。')
                 return False
-            elif not Path(TTS_CONFIG_PATH).exists():
+            elif not Path(TTS_CONFIG_PATH).resolve().is_file():
                 print(Style.BRIGHT + Back.RED + u'"tts.config_path"配置文件路径不存在！')
                 return False
             if not isinstance(TTS_MODEL_PATH, str):
                 print(Style.BRIGHT + Back.RED + u'"tts.model_path"参数错误！模型文件路径必须为非空字符串。')
                 return False
-            elif not Path(TTS_MODEL_PATH).exists():
+            elif not Path(TTS_MODEL_PATH).resolve().is_file():
                 print(Style.BRIGHT + Back.RED + u'"tts.model_path"模型文件路径不存在！')
                 return False
             if not isinstance(TTS_LANGUAGE, str):
